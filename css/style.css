@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    padding: .5rem;
+    background-color: rgb(216, 216, 216);
+
+}
+#main-container {  
+   
+    padding: 0 .5rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    /* border: 3px solid red; */
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding-right: 2.5rem;
+    margin-bottom: 0rem;
+
+    /* border: 1px solid red; */
+}
+
+.input-sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    /* border: 1px solid blue; */
+}
+
+#input-container-2 {
+    /* margin-bottom: 5rem; */
+}
+
+.bi {
+    font-size: 2rem;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgba(7, 7, 7, 0.384);
+}
+
+.informResult {
+    font-size: 1rem;
+    font-style: italic;
+    color: red;
+    text-align: center;
+}
+#average-value {
+   
+}
+
+/* Inputs */
+#calculator label, input[type="text"] {
+    text-align: center;   
+    /* border: 1px solid red; */
+}
+
+#calculator label {
+    
+}
+
+#calculator input[type="text"] {
+    width: 100px;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+
+#fuels {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-bottom: 2rem;  
+    
+    /* background-color: rgb(205, 205, 247); */
+}
+
+#calculator #fuels .fuel input[type="text"] {
+    width: 30%;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.fuel {       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: rgb(180, 238, 180); */
+}
+
+.fuel input[type="text"]{
+  
+    /* background-color: red;    */
+}
+
+
+input[type="button"] {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media(max-width: 321px){
+    #main-container {
+        height: auto;
+    }
+}

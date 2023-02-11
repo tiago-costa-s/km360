@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360kM</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/script.js" defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header id="header">
+        <i class="bi bi-globe-americas"></i>
+        <h1>km360</h1>
+    </header>
+    <main id="main-container">       
+        <section id="calculator">
+            <!-- Consumo Médio -->
+            <h2 class="title">Consumo Médo</h2>
+            <div class="input-container">
+                <i class="bi bi-fuel-pump-fill"></i>
+                <div class="input-sub-container">
+                    <label for="">Abastecido</label>
+                    <input type="text" id="suppliedQtd" placeholder="100,00">
+                </div>
+            </div>
+
+            <div class="input-container" id="input-container-2">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="input-sub-container">
+                    <label for="">Km Rodado</label>
+                    <input type="text" id="kilometerDriven" placeholder="1000">
+                </div>
+            </div>
+            <!-- Informe resultado consumo medio -->
+            <div class="informResult" id="average-result">
+                <p id="average-value"></p>
+            </div>
+
+
+
+            <!-- Custo para Chegar lá -->
+            <h2 class="title">Melhor preço Gasolina vs Alcool</h2>
+            <div id="fuels">
+                <div class="fuel">
+                    <label for="">Gasolina: R$</label>
+                    <input type="text" id="gasoline" placeholder="0,00">
+                </div>
+                <div class="fuel">
+                    <label for="">Alcool: R$</label>
+                    <input type="text" id="alcohol" placeholder="0,00">
+                </div>
+            </div>
+            <!-- Informe resultado melhor preço -->
+            <div class="informResult" id="average-result">
+                <p id="average-value"></p>
+                <p id="betterPrice-value"></p>
+            </div>
+
+
+            <!-- Calcula o custo para percorrer x km -->
+            <h2 class="title">Quanto vou gastar</h2>
+            <div class="input-container">
+
+                <i class="bi bi-map-fill"></i>
+                <div class="input-sub-container">
+                    <label for="">Distancia</label>
+                    <input type="text" id="distanceToGO" placeholder="1000">
+                </div>
+            </div>
+            <!-- Inform resultado sobre o melhor custo -->
+            <div class="informResult" id="average-result">
+                <p id="costToFuel"></p>
+                <p id="gasolineCost"></p>
+                <p id="alcoholCost"></p>
+            </div>
+            <input type="button" value="Calcular" id="btn-calculate">
+        </section>
+    </main>
+</body>
+
+</html>
