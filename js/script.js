@@ -5,6 +5,7 @@ const gasValue = document.querySelector("#gasoline");
 const alcValue = document.querySelector("#alcohol");
 const distValue = document.querySelector("#distanceToGO");
 const avValue = document.querySelector("#average-value");
+
 // Variaveis dos campos que retornam o resultado das funções "imprint".
 const betterValue = document.querySelector("#betterPrice-value");
 const costFuelValue = document.querySelector("#costToFuel");

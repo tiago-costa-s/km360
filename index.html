@@ -13,14 +13,15 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header id="header">
-        <i class="bi bi-globe-americas"></i>
+        <i class="bi bi-globe-americas" id="logo"></i>
         <h1>km360</h1>
     </header>
-    <main id="main-container">       
-        <section id="calculator">
-            <!-- Consumo Médio -->
-            <h2 class="title">Consumo Médo</h2>
+    <main id="main">
+        <!-- Consumo Médio -->
+        <section class="containers">
+            <h2 class="title-containers">Consumo Médo</h2>
             <div class="input-container">
                 <i class="bi bi-fuel-pump-fill"></i>
                 <div class="input-sub-container">
@@ -28,7 +29,6 @@
                     <input type="text" id="suppliedQtd" placeholder="100,00 Lts.">
                 </div>
             </div>
-
             <div class="input-container" id="input-container-2">
                 <i class="bi bi-geo-alt-fill"></i>
                 <div class="input-sub-container">
@@ -37,35 +37,35 @@
                 </div>
             </div>
             <!-- Informe resultado consumo medio -->
-            <div class="informResult" id="average-result">
+            <footer class="inform-result" id="average-result">
                 <p id="average-value"></p>
-            </div>
+            </footer>
+        </section>
 
-
-
-            <!-- Custo para Chegar lá -->
-            <h2 class="title">Melhor preço Gasolina vs Alcool</h2>
-            <div id="fuels">
-                <div class="fuel">
+        <!-- Melhor Preço Gasoline x Alcool -->
+        <section class="containers">
+            <h2 class="title-containers">Melhor preço Gasolina x Alcool</h2>
+            <div class="input-container" id="input-container-fuels">
+                <div class="input-sub-container" id="fuel">
                     <label for="">Gasolina: R$</label>
                     <input type="text" id="gasoline" placeholder="0,00">
                 </div>
-                <div class="fuel">
+                <div class="input-sub-container" id="fuel">
                     <label for="">Alcool: R$</label>
                     <input type="text" id="alcohol" placeholder="0,00">
                 </div>
             </div>
             <!-- Informe resultado melhor preço -->
-            <div class="informResult" id="average-result">
+            <footer class="inform-result" id="average-result">
                 <p id="average-value"></p>
                 <p id="betterPrice-value"></p>
-            </div>
+            </footer>
+        </section>
 
-
-            <!-- Calcula o custo para percorrer x km -->
-            <h2 class="title">Quanto vou gastar</h2>
+        <!-- Calcula o custo para percorrer x km -->
+        <section class="containers">
+            <h2 class="title-containers">Quanto vou gastar</h2>
             <div class="input-container">
-
                 <i class="bi bi-map-fill"></i>
                 <div class="input-sub-container">
                     <label for="">Distancia</label>
@@ -73,13 +73,14 @@
                 </div>
             </div>
             <!-- Inform resultado sobre o melhor custo -->
-            <div class="informResult" id="average-result">
+            <footer class="inform-result" id="average-result">
                 <p id="costToFuel"></p>
                 <p id="gasolineCost"></p>
                 <p id="alcoholCost"></p>
-            </div>
-            <input type="button" value="Calcular" id="btn-calculate">
+            </footer>
         </section>
+
+        <input type="button" value="Calcular" id="btn-calculate">
     </main>
 </body>
 

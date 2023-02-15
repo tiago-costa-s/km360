@@ -5,136 +5,132 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#header{
-    display: flex;
-    gap: .2rem;
-    align-items: center;
-    padding: .5rem;
-    background-color: rgb(216, 216, 216);
-
+.bi {
+    font-size: 1.5rem;
+    color:  rgb(196, 232, 247);
 }
-#main-container {  
-   
+
+input[type="text"] {
+    width: 100%;
+    max-width: 100px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+    color: rgb(176, 176, 176);
+}
+
+label {
+    margin: .5rem;
+}
+
+/* Cabeçalho */
+#header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#logo {
+    font-size: 3rem;
+    color:  rgb(11, 179, 251);
+}
+
+/* Main Container */
+#main {
     padding: 0 .5rem;
 }
 
-#calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Seções */
+.containers {
     width: 100%;
-
-    /* border: 3px solid red; */
-}
-
-h1{
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;   
+    text-align: center;
+}    
+    /* Containers */
+.title-containers {
+    padding: .5rem 0;
     font-size: 1.5rem;
-    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(123, 123, 123, 0.314);
 }
 
-.title {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
+/* Input Containers */
 .input-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    padding-right: 2.5rem;
-    margin-bottom: 0rem;
-
-    /* border: 1px solid red; */
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
 }
 
-.input-sub-container{
+.input-sub-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    /* border: 1px solid blue; */
 }
 
-#input-container-2 {
-    /* margin-bottom: 5rem; */
-}
-
-.bi {
-    font-size: 2rem;
-}
-
-input::placeholder {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: rgba(7, 7, 7, 0.384);
-}
-
-.informResult {
+/* Informação de Resultado */
+.inform-result {
+    padding: .5rem 0;
+    border-top: 1px solid rgba(123, 123, 123, 0.314);
     font-size: 1rem;
     font-style: italic;
-    color: red;
-    text-align: center;
-}
-#average-value {
-   
+    color: rgb(11, 179, 251); 
 }
 
-/* Inputs */
-#calculator label, input[type="text"] {
-    text-align: center;   
-    /* border: 1px solid red; */
-}
-
-#calculator label {
+/* Melhor Preço Gasoline x Alcool */
+#input-container-fuels {
     
 }
 
-#calculator input[type="text"] {
-    width: 100px;
-    border: 0;
-    border-bottom: 1px solid black;
-    font-size: 2rem;
-}
-
-#fuels {
+.input-sub-container {
     display: flex;
-    align-items: center;
-    justify-content: center;  
-    margin-bottom: 2rem;  
-    
-    /* background-color: rgb(205, 205, 247); */
-}
-
-#calculator #fuels .fuel input[type="text"] {
-    width: 30%;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-}
-
-.fuel {       
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-
-    /* background-color: rgb(180, 238, 180); */
 }
-
-.fuel input[type="text"]{
-  
-    /* background-color: red;    */
-}
-
 
 input[type="button"] {
     width: 100%;
     padding: 1rem;
+    background-color:  rgb(11, 179, 251);
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
 }
 
-@media(max-width: 321px){
-    #main-container {
-        height: auto;
+/* Width: 360px */
+@media (max-width: 360px){
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    .title-containers {       
+        font-size: 1.2rem;
+        
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: .9rem;
+        margin: .5rem;
     }
 }
