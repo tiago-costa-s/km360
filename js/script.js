@@ -71,6 +71,7 @@ btnCalculate.addEventListener("click", () => {
         return checkBetterPrice;
     }
     checkBetterPrice();
+    
     // Imprime mensagem sobre qual e o melhor combustivel.
     function imprintMensageBestPrice() {
         if (checkBetterPrice() < 70) {
