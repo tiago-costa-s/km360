@@ -124,8 +124,16 @@ input[type="button"] {
 
 @media(min-width: 768px){
     #main {
-        padding: 0 5rem;
+        max-width: 550px;
+        padding: 0 rem;
         border: 1px solid rgba(123, 123, 123, 0.314);
+    }
+
+    input[type="button"] {
+        width: 100%;
+        max-width: 200px;
+        padding: 1rem;       
+        font-size: 1rem; 
     }
 }
 /* Width: 360px */
@@ -159,8 +167,7 @@ input[type="button"] {
     input[type="button"] {
         width: 100%;
         padding: 1rem;       
-        font-size: 1rem;
- 
+        font-size: 1rem; 
     }
 }
 
