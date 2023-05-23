@@ -7,7 +7,7 @@
 
 .bi {
     font-size: 1.5rem;
-    color:  rgb(196, 232, 247);
+    color: rgb(196, 232, 247);
 }
 
 input[type="number"] {
@@ -29,6 +29,11 @@ label {
     margin: .5rem;
 }
 
+#container {
+    border: 2px solid red;
+
+}
+
 /* Cabeçalho */
 #header {
     display: flex;
@@ -40,7 +45,7 @@ label {
 
 #logo {
     font-size: 3rem;
-    color:  rgb(11, 179, 251);
+    color: rgb(11, 179, 251);
 }
 
 /* Main Container */
@@ -52,20 +57,21 @@ label {
     width: 100%;
     max-width: 650px;
     padding: 0 .7rem;
-    margin: auto;  
+    margin: auto;
 }
 
 /* Seções */
 .containers {
-    width: 100%;    
+    width: 100%;
     margin: 1rem 0 1rem;
     border-radius: 10px;
     /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;    */
     text-align: center;
 
     /* border: 1px solid red; */
-}    
-    /* Containers */
+}
+
+/* Containers */
 .title-containers {
     padding: 1rem 0;
     font-size: 1rem;
@@ -96,13 +102,11 @@ label {
     border-bottom: 1px solid rgba(123, 123, 123, 0.314);
     font-size: 1rem;
     font-style: italic;
-    color: rgb(11, 179, 251); 
+    color: rgb(11, 179, 251);
 }
 
 /* Melhor Preço Gasoline x Alcool */
-#input-container-fuels {
-    
-}
+#input-container-fuels {}
 
 .input-sub-container {
     display: flex;
@@ -113,7 +117,7 @@ label {
 input[type="button"] {
     width: 100%;
     padding: 1rem;
-    background-color:  rgb(11, 179, 251);
+    background-color: rgb(11, 179, 251);
     border-radius: 5px;
     border: 0;
     margin-bottom: .5rem;
@@ -122,7 +126,7 @@ input[type="button"] {
     color: white;
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
     #main {
         max-width: 550px;
         padding: 0 rem;
@@ -132,14 +136,15 @@ input[type="button"] {
     input[type="button"] {
         width: 100%;
         max-width: 200px;
-        padding: 1rem;       
-        font-size: 1rem; 
+        padding: 1rem;
+        font-size: 1rem;
     }
 }
-/* Width: 360px */
-@media (max-width: 375px){
 
-    h1{
+/* Width: 360px */
+@media (max-width: 375px) {
+
+    h1 {
         font-size: 1.5rem;
     }
 
@@ -147,8 +152,8 @@ input[type="button"] {
         font-size: 2rem;
     }
 
-    .title-containers {       
-        font-size: 1.2rem;        
+    .title-containers {
+        font-size: 1.2rem;
     }
 
     ::placeholder {
@@ -160,14 +165,13 @@ input[type="button"] {
         margin: .5rem;
     }
 
-    #fuel input{
+    #fuel input {
         max-width: 60px;
     }
 
     input[type="button"] {
         width: 100%;
-        padding: 1rem;       
-        font-size: 1rem; 
+        padding: 1rem;
+        font-size: 1rem;
     }
 }
-

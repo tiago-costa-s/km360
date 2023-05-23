@@ -13,73 +13,78 @@
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header id="header">
-        <i class="bi bi-globe-americas" id="logo"></i>
-        <h1>kM360</h1>
-    </header>
-    <main id="main">
-        <!-- Consumo Médio -->
-        <section class="containers">
-            <h2 class="title-containers">Saiba qual é a media de consumo do seu veiculo</h2>
-            <div class="input-container">
-                <i class="bi bi-fuel-pump-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="suppliedQtd" placeholder="10,00 Lts." title="Informe quantos litros de combustivel foram abastecidos.">
-                    <label for="">Abastecido</label>
+    <div id="container">
+        <!-- Cabeçalho -->
+        <header id="header">
+            <i class="bi bi-globe-americas" id="logo"></i>
+            <h1>kM360</h1>
+        </header>
+        <main id="main">
+            <!-- Consumo Médio -->
+            <section class="containers">
+                <h2 class="title-containers">Saiba qual é a media de consumo do seu veiculo</h2>
+                <div class="input-container">
+                    <i class="bi bi-fuel-pump-fill"></i>
+                    <div class="input-sub-container">
+                        <input type="number" id="suppliedQtd" placeholder="10,00 Lts."
+                            title="Informe quantos litros de combustivel foram abastecidos.">
+                        <label for="">Abastecido</label>
+                    </div>
                 </div>
-            </div>
-            <div class="input-container" id="input-container-2">
-                <i class="bi bi-geo-alt-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="kilometerDriven" placeholder="100 km" title="Informe quantos quilometros você percorreu com os litros abastecidos acima.">
-                    <label for="">Km Rodado</label>
+                <div class="input-container" id="input-container-2">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="input-sub-container">
+                        <input type="number" id="kilometerDriven" placeholder="100 km"
+                            title="Informe quantos quilometros você percorreu com os litros abastecidos acima.">
+                        <label for="">Km Rodado</label>
+                    </div>
                 </div>
-            </div>
-            <!-- Informe resultado consumo medio -->
-            <footer class="inform-result" id="average-result">
-                <p id="average-value"></p>
-            </footer>
-        </section>
-        <!-- Melhor Preço Gasoline x Alcool -->
-        <section class="containers">
-            <h2 class="title-containers">Descubra qual combustivel está com o melhor preço</h2>
-            <div class="input-container" id="input-container-fuels">
-                <div class="input-sub-container" id="fuel">
-                    <label for="">Gasolina: R$</label>
-                    <input type="number" id="gasoline" placeholder="0,00" title="Informe o preço da Gasolina.">
+                <!-- Informe resultado consumo medio -->
+                <footer class="inform-result" id="average-result">
+                    <p id="average-value"></p>
+                </footer>
+            </section>
+            <!-- Melhor Preço Gasoline x Alcool -->
+            <section class="containers">
+                <h2 class="title-containers">Descubra qual combustivel está com o melhor preço</h2>
+                <div class="input-container" id="input-container-fuels">
+                    <div class="input-sub-container" id="fuel">
+                        <label for="">Gasolina: R$</label>
+                        <input type="number" id="gasoline" placeholder="0,00" title="Informe o preço da Gasolina.">
+                    </div>
+                    <div class="input-sub-container" id="fuel">
+                        <label for="">Alcool: R$</label>
+                        <input type="number" id="alcohol" placeholder="0,00" title="Informe o preço da Alcool.">
+                    </div>
                 </div>
-                <div class="input-sub-container" id="fuel">
-                    <label for="">Alcool: R$</label>
-                    <input type="number" id="alcohol" placeholder="0,00" title="Informe o preço da Alcool.">
+                <!-- Informe resultado melhor preço -->
+                <footer class="inform-result" id="average-result">
+                    <p id="average-value"></p>
+                    <p id="betterPrice-value"></p>
+                </footer>
+            </section>
+            <!-- Calcula o custo para percorrer x km -->
+            <section class="containers">
+                <h2 class="title-containers">Quanto vou gastar para viajar ?</h2>
+                <div class="input-container">
+                    <i class="bi bi-map-fill"></i>
+                    <div class="input-sub-container">
+                        <input type="number" id="distanceToGO" placeholder="100 km"
+                            title="Informe quantos km você ira percorrer." min="0">
+                        <label for="">Distancia</label>
+                    </div>
                 </div>
-            </div>
-            <!-- Informe resultado melhor preço -->
-            <footer class="inform-result" id="average-result">
-                <p id="average-value"></p>
-                <p id="betterPrice-value"></p>
-            </footer>
-        </section>
-        <!-- Calcula o custo para percorrer x km -->
-        <section class="containers">
-            <h2 class="title-containers">Quanto vou gastar para viajar ?</h2>
-            <div class="input-container">
-                <i class="bi bi-map-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="distanceToGO" placeholder="100 km" title="Informe quantos km você ira percorrer." min="0">
-                    <label for="">Distancia</label>
-                </div>
-            </div>
-            <!-- Inform resultado sobre o melhor custo -->
-            <footer class="inform-result" id="average-result">
-                <p id="costToFuel"></p>
-                <p id="gasolineCost"></p>
-                <p id="alcoholCost"></p>
-            </footer>
-        </section>
+                <!-- Inform resultado sobre o melhor custo -->
+                <footer class="inform-result" id="average-result">
+                    <p id="costToFuel"></p>
+                    <p id="gasolineCost"></p>
+                    <p id="alcoholCost"></p>
+                </footer>
+            </section>
 
-        <input type="button" value="Calcular" id="btn-calculate">
-    </main>
+            <input type="button" value="Calcular" id="btn-calculate">
+        </main>
+    </div>
 </body>
 
 </html>
