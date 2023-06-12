@@ -43,6 +43,7 @@ header {
 #box-logo p, .fa-car-side {
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
+    margin-left: .5rem;
 }
 
 #box-repository a {
@@ -145,7 +146,7 @@ h3 {
 
 .calculator {
     width: 100%;
-    max-width: 420px;
+    max-width: 450px;
     border-radius: 10px;
     border: 1px solid #d6e7f82a;
     margin-bottom: 1.5rem;
@@ -294,7 +295,7 @@ h3 {
 /* Resultado */
 #result1, #result2 {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 450px;
     height: 79px;
     border-radius: 7px;
 }
@@ -387,6 +388,7 @@ h3 {
     justify-content: center;
     gap: 2rem;
     height: 400px;
+    margin-top: 3rem;
     background-image: linear-gradient(to bottom, #212529, #232b35, #253241, #27384d, #2b3e5a);
 }
 
