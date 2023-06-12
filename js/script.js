@@ -12,19 +12,19 @@ const btnResets = document.querySelectorAll(".btn-reset");
 const btnResetAverage = document.querySelector("#btn-reset-average");
 const btnResetBestPrice = document.querySelector("#btn-reset-best-price");
 
-const selectF = document.querySelector("#select-fuel");
+
 const optionsSelect = document.querySelector("#control-select-fuel select");
 
 // Funções
 function insertColorSelectOpitions() {
     optionsSelect.className = "";
-    if (selectF.value === "gasoline") {
+    if (optionsSelect.value === "gasoline") {
         optionsSelect.classList.add("gasoline-text-colors");
     }
-    else if (selectF.value === "alcohol") {
+    else if (optionsSelect.value === "alcohol") {
         optionsSelect.classList.add("alcohol-text-colors");
     }
-    else if (selectF.value === "diesel") {
+    else if (optionsSelect.value === "diesel") {
         optionsSelect.classList.add("diesel-text-colors");
     } else {
         optionsSelect.classList.add("noneClass");
@@ -32,7 +32,7 @@ function insertColorSelectOpitions() {
 }
 
 function selectTypeFuel() {
-    const select = selectF.value;
+    const select = optionsSelect.value;
     if (select === "gasoline") {
         return `Gasolina`;
     } else if (select === "alcohol") {
@@ -119,7 +119,7 @@ function createResult() {
     pTypeFuel.appendChild(spanTypeFuel);
 
     if (this === btnAverage) {
-        if (!litersF.value || !kmTrav.value || !selectF.value) return;
+        if (!litersF.value || !kmTrav.value || !optionsSelect.value) return;
 
         existingResult1 = document.querySelector("#result1");
         if (existingResult1 != null) {
@@ -164,7 +164,7 @@ function createResult() {
 function insertColorResult1() {
     existingResult1 = document.querySelector("#result1");
 
-    if (selectF.value === "gasoline") {
+    if (optionsSelect.value === "gasoline") {
         existingResult1.classList.add("gasoline-colors-result");
         headerResults.classList.add("gasoline-colors-header");
         pResult.classList.add("gasoline-span-colors");
@@ -175,7 +175,7 @@ function insertColorResult1() {
         spanTypeFuel.classList.add("gasoline-span-colors");
     }
 
-    else if (selectF.value === "alcohol") {
+    else if (optionsSelect.value === "alcohol") {
         existingResult1.classList.add("alcohol-colors-result");
         headerResults.classList.add("alcohol-colors-header");
         pResult.classList.add("alcohol-span-colors");
@@ -186,7 +186,7 @@ function insertColorResult1() {
         spanTypeFuel.classList.add("alcohol-span-colors");
     }
 
-    else if (selectF.value === "diesel") {
+    else if (optionsSelect.value === "diesel") {
         existingResult1.classList.add("diesel-colors-result");
         headerResults.classList.add("diesel-colors-header");
         pResult.classList.add("diesel-span-colors");
@@ -243,7 +243,7 @@ function resetInputsBestPrice() {
 }
 
 // Eventos
-selectF.addEventListener("click", insertColorSelectOpitions);
+optionsSelect.addEventListener("input", insertColorSelectOpitions);
 btnAverage.addEventListener("click", createResult);
 btnBestPrice.addEventListener("click", createResult);
 
