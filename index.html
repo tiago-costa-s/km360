@@ -5,81 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>360kM</title>
+    <title>KM360</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="./js/script.js" defer></script>
+    <!-- Fonte Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100&family=Roboto:wght@100;300&family=Rubik:wght@300&family=Satisfy&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header id="header">
-        <i class="bi bi-globe-americas" id="logo"></i>
-        <h1>kM360</h1>
-    </header>
-    <main id="main">
-        <!-- Consumo Médio -->
-        <section class="containers">
-            <h2 class="title-containers">Saiba qual é a media de consumo do seu veiculo</h2>
-            <div class="input-container">
-                <i class="bi bi-fuel-pump-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="suppliedQtd" placeholder="10,00 Lts." title="Informe quantos litros de combustivel foram abastecidos.">
-                    <label for="">Abastecido</label>
-                </div>
-            </div>
-            <div class="input-container" id="input-container-2">
-                <i class="bi bi-geo-alt-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="kilometerDriven" placeholder="100 km" title="Informe quantos quilometros você percorreu com os litros abastecidos acima.">
-                    <label for="">Km Rodado</label>
-                </div>
-            </div>
-            <!-- Informe resultado consumo medio -->
-            <footer class="inform-result" id="average-result">
-                <p id="average-value"></p>
-            </footer>
-        </section>
-        <!-- Melhor Preço Gasoline x Alcool -->
-        <section class="containers">
-            <h2 class="title-containers">Descubra qual combustivel está com o melhor preço</h2>
-            <div class="input-container" id="input-container-fuels">
-                <div class="input-sub-container" id="fuel">
-                    <label for="">Gasolina: R$</label>
-                    <input type="number" id="gasoline" placeholder="0,00" title="Informe o preço da Gasolina.">
-                </div>
-                <div class="input-sub-container" id="fuel">
-                    <label for="">Alcool: R$</label>
-                    <input type="number" id="alcohol" placeholder="0,00" title="Informe o preço da Alcool.">
-                </div>
-            </div>
-            <!-- Informe resultado melhor preço -->
-            <footer class="inform-result" id="average-result">
-                <p id="average-value"></p>
-                <p id="betterPrice-value"></p>
-            </footer>
-        </section>
-        <!-- Calcula o custo para percorrer x km -->
-        <section class="containers">
-            <h2 class="title-containers">Quanto vou gastar para viajar ?</h2>
-            <div class="input-container">
-                <i class="bi bi-map-fill"></i>
-                <div class="input-sub-container">
-                    <input type="number" id="distanceToGO" placeholder="100 km" title="Informe quantos km você ira percorrer." min="0">
-                    <label for="">Distancia</label>
-                </div>
-            </div>
-            <!-- Inform resultado sobre o melhor custo -->
-            <footer class="inform-result" id="average-result">
-                <p id="costToFuel"></p>
-                <p id="gasolineCost"></p>
-                <p id="alcoholCost"></p>
-            </footer>
-        </section>
+        <div id="nav">
+            <div id="nav-content">
+                <div id="box-logo">
+                    <p>kM360 <i class="fa-solid fa-car-side"></i></p>
 
-        <input type="button" value="Calcular" id="btn-calculate">
-    </main>
+                </div>
+                <div id="box-repository">
+                    <a href="https://github.com/Tiago-Costa-s/km360" target="_blank">
+
+                        <p><i class="fa fa-code" aria-hidden="true"></i> code</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="top-container">
+            <div id="box-description-app">
+                <h1>Sobre</h1>
+                <div id="description-app">
+                    <p>O <span>kM360</span> e uma ferramenta simples e fácil que te ajudará a calcular o consumo médio
+                        do
+                        seu veiculo e também saber qual e o melhor preço entre os combustives.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <!-- Consumo medio -->
+        <div class="orbit">
+            <div class="description-option">
+                <h2>O que e o consumo médio de um automovel?</h2>
+                <p>O consumo médio de um automóvel refere-se à quantidade média de combustível que o veículo consome por
+                    unidade de distância percorrida. É uma medida que indica a eficiência do veículo em termos de
+                    consumo de combustível.</p>
+                <p>A media é obtida pela divisão entre a distância percorrida <b>(Km
+                        percorrido)</b> e a quantidade de combustível <b>(Litros)</b> gasto(s) nesse percurso.
+                </p>
+            </div>
+            <section class="calculator" id="average-price-calculator">
+                <div class="headers-calculator">
+                    <div class="title-calculator">
+                        <i class="bi bi-fuel-pump-fill"></i>
+                        <h3>Calcule o Consumo Médio</h3>
+                    </div>
+                </div>
+                <div class="controls">
+
+                    <div id="control-select-fuel">
+                        <p>Selecione o combustível:</p>
+                        <select id="select-fuel">
+                            <option value=""> - - -</option>
+                            <option value="gasoline">Gasolina</option>
+                            <option value="alcohol">Álcool</option>
+                            <option value="diesel">Disel</option>
+                        </select>
+                    </div>
+                    <div id="control">
+                        <div class="control-inputs">
+                            <label for="">Litros:</label>
+                            <input type="text" placeholder="35L" id="liters">
+                        </div>
+                        <div class="control-inputs">
+                            <label for="">kM Percorrido:</label>
+                            <input type="text" placeholder="450km" id="km-traveled">
+                        </div>
+                    </div>
+                    <div class="controls-btn">
+                        <button class="btn btn-calc" id="btn-average">Calcular Média</button>
+                        <button class="btn btn-reset" id="btn-reset-average">Resetar</button>
+                    </div>
+                </div>
+            </section>
+            <div class="box-results box1"></div>
+        </div>
+
+        <div class="orbit">
+            <div class="description-option">
+                <h2>Como saber qual combustivel esta mais em conta?</h2>
+                <p>A principal diferença entre os dois combustíveis está na proporção entre o preço e o desempenho de
+                    cada um. Esta calculadora do Meu Bolso em Dia compara o preço do litro do álcool e da gasolina e
+                    mostra qual é o combustível mais vantajoso, financeiramente, no momento.
+                </p>
+                <p>O etanol vale a pena quando custar até 70% do valor da gasolina.</p>
+                <p>Preencha os campos abaixo com os preços dos combustíveis que você encontra hoje nos postos e clique
+                    no botão “calcular” para saber qual é a melhor opção.</p>
+            </div>
+            <section class="calculator" id="average-price-calculator">
+                <div class="headers-calculator">
+                    <div class="title-calculator">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <h3>Melhor Preço Gasolina x Álcool</h3>
+                    </div>
+                </div>
+                <div class="controls">
+
+                    <div id="control">
+                        <div class="control-inputs">
+                            <label for="">Gasolina: R$</label>
+                            <input type="text" placeholder="5,40" id="gasoline-price">
+                        </div>
+                        <div class="control-inputs">
+                            <label for="">Álcool: R$</label>
+                            <input type="text" placeholder="3,80" id="alcohol-price">
+                        </div>
+                    </div>
+                    <div class="controls-btn">
+                        <button class="btn btn-calc" id="btn-best-price">Melhor Preço</button>
+                        <button class="btn btn-reset" id="btn-reset-best-price">Resetar</button>
+                    </div>
+                </div>
+            </section>
+            <div class="box-results box2"></div>
+        </div>
+    </div>
+    <footer id="footer">
+
+        <a href="https://github.com/Tiago-Costa-s" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/tiago-costa-80a34097" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+    </footer>
 </body>
 
 </html>
