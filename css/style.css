@@ -431,7 +431,7 @@ h3 {
     }
 
     .control-inputs input::placeholder {
-        /* font-size: 1rem; */
+        font-size: 1.1rem;
         text-align: center;
     }
 
