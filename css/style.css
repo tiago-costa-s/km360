@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
     background-color: #212529;
     /* background-image: linear-gradient(to top, #212529, #212529, #212529, #212529, #4e3d7c); */
-    /* border: 2px solid red; */
 }
 
 header {
@@ -32,10 +31,8 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 100%;
-    max-width: 1280px;
+    width: min(100%, 1280px);
     padding: 1rem;
-
 }
 
 #box-logo p {
@@ -56,9 +53,13 @@ header {
     font-size: 1rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
-    /* border: 1px solid red; */
 }
 
+h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
 
 h2 {
     font-size: 1.7rem;
@@ -81,24 +82,12 @@ h3 {
     width: 100%;
     min-height: 60vh;
     background: rgb(33, 38, 41);
-
-    /* background-image: linear-gradient(to top, #212529, #1b2736, #182743, #1e264e, #2c2256, #36235d, #412464, #4d246a, #522e76, #573782, #5c418f, #604b9b); */
     background-image: linear-gradient(to top, #212529, #222e35, #21383f, #1f4248, #1d4c4e);
-    /* background-image: linear-gradient(to top, #212529, #212f3f, #233856, #2c406c, #3e4682, #464486, #504188, #5a3e8a, #55347e, #502a72, #4b2066, #45165a);    background-image: linear-gradient(to top, #212529, #202c3a, #22324b, #28375b, #353b6b, #3e3f7b, #49438b, #57469a, #5c4db1, #5f55c9, #605de2, #5f66fb); */
-    /* border: 2px solid red; */
 }
-
 
 #box-description-app {
-    width: 100%;
-    max-width: 1000px;
+    width: min(100%, 1000px);
     text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 2rem;
 }
 
 #description-app {
@@ -129,8 +118,6 @@ h1 {
     width: 100%;
     max-width: 800px;
     margin-top: 5rem;
-
-    /* border: 2px solid blue; */
 }
 
 .orbit {
@@ -140,7 +127,6 @@ h1 {
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
-    /* border: 1px solid #d2d6d831;     */
 }
 
 .description-option {
@@ -152,19 +138,17 @@ h1 {
 }
 
 .description-option p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 1rem;
 }
 
 .calculator {
     width: 100%;
-    max-width: 500px;
+    max-width: 420px;
     border-radius: 10px;
     border: 1px solid #d6e7f82a;
     margin-bottom: 1.5rem;
-
-    /* border: 1px solid red; */
 }
 
 .headers-calculator {
@@ -176,8 +160,6 @@ h1 {
     border-bottom: 1px solid #d6e7f836;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-    /* background-color: #2B3035; */
 }
 
 .headers-calculator, .bi {
@@ -189,8 +171,6 @@ h1 {
     align-items: center;
     gap: 1.2rem;
     width: 100%;
-
-    /* border: 1px solid red; */
 }
 
 .title-calculator i {
@@ -209,6 +189,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    margin-bottom: 1rem;
     padding: .5rem;
     font-size: 1rem;
 }
@@ -228,16 +209,18 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     padding: .5rem 0;
     font-size: .9rem;
 }
 
 .control-inputs {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
     gap: .5rem;
+    margin-bottom: 1rem;
+
+    /* border: 1px solid red; */
 }
 
 .control-inputs label {
@@ -248,8 +231,8 @@ h1 {
 .control-inputs input {
     display: flex;
     flex-direction: row;
-    width: 90px;
-    padding: .5rem;
+    width: 100%;
+    max-width: 80px;
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid #8D949B;
@@ -404,41 +387,90 @@ h1 {
     justify-content: center;
     gap: 2rem;
     height: 400px;
-    /* border: 1px solid red; */
-    /* background-image: linear-gradient(to bottom, #212529, #222e35, #21383f, #1f4248, #1d4c4e); */
-    /* background-image: linear-gradient(to bottom, #212529, #2a2930, #362d32, #403131, #44382f); */
     background-image: linear-gradient(to bottom, #212529, #232b35, #253241, #27384d, #2b3e5a);
 }
 
 #footer i {
     font-size: 2rem;
-    color:#b9bbbe ;
+    color: #b9bbbe;
 }
 
-
 /* Responsividade */
-@media(max-width: 480px) {
+@media (max-width: 480px) {
 
-    .orbit {
-        padding: 0 .7rem;
+    #top-container, .orbit {
+        padding: .8rem;
     }
 
-    #description-app p {
-        padding: 0 .7rem;
+    /* Description-app */
+    #top-container P {
         text-align: justify;
     }
 
+    /* Description-option */
     .description-option {
-        padding: 1.5rem;
+        padding: 1em;
     }
 
-    .description-option p {
+    .description-option p {}
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .control-inputs {}
+
+    .control-inputs label {
+        font-size: .8rem;
+        text-align: start;
+    }
+
+    .control-inputs input {
+        /* max-width: 50px; */
         font-size: 1.2rem;
     }
 
-    h2 {
-        font-weight: 500;
+    .control-inputs input::placeholder {
+        /* font-size: 1rem; */
         text-align: center;
+    }
+
+    #control-select-fuel {}
+
+}
+
+@media (max-width: 380px) {
+
+    /* Description-option */
+    .description-option {
+        padding: 1em;
+    }
+
+
+    .headers-calculator, .bi {
+        font-size: 1.5rem;
+    }
+
+    #control {
+        padding: 0;
+    }
+
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .controls {
+    /* padding: 0rem 0rem; */
+    }
+
+    .control-inputs label {
+        font-size: .8rem;
+    }
+
+    .control-inputs input {
+        max-width: 50px;
+        font-size: 1rem;
     }
 
 }

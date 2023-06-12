@@ -12,7 +12,6 @@ const btnResets = document.querySelectorAll(".btn-reset");
 const btnResetAverage = document.querySelector("#btn-reset-average");
 const btnResetBestPrice = document.querySelector("#btn-reset-best-price");
 
-
 const selectF = document.querySelector("#select-fuel");
 
 // Funções
