@@ -13,8 +13,22 @@ const btnResetAverage = document.querySelector("#btn-reset-average");
 const btnResetBestPrice = document.querySelector("#btn-reset-best-price");
 
 const selectF = document.querySelector("#select-fuel");
+const optionsSelect = document.querySelector("#control-select-fuel select");
 
 // Funções
+function insertColorSelect() {
+    optionsSelect.className = "";
+    if (selectF.value === "gasoline") {
+        optionsSelect.classList.add("gasoline-text-colors");
+    }
+    else if (selectF.value === "alcohol") {
+        optionsSelect.classList.add("alcohol-text-colors");
+    }
+    else if (selectF.value === "diesel") {
+        optionsSelect.classList.add("diesel-text-colors");
+    }
+}
+
 function selectTypeFuel() {
     const select = selectF.value;
     if (select === "gasoline") {
@@ -65,7 +79,7 @@ let pFuelResults;
 let pTipeResults;
 let spanTypeFuel;
 
-function Teste() {
+function createResult() {
     let divResults = document.createElement("div");
     // Cria o header-results
     headerResults = document.createElement("div");
@@ -227,8 +241,9 @@ function resetInputsBestPrice() {
 }
 
 // Eventos
-btnAverage.addEventListener("click", Teste);
-btnBestPrice.addEventListener("click", Teste);
+selectF.addEventListener("click", insertColorSelect);
+btnAverage.addEventListener("click", createResult);
+btnBestPrice.addEventListener("click", createResult);
 
 btnResets.forEach((btn) => {
     btn.addEventListener("click", (e) => {

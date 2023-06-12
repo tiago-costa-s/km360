@@ -329,6 +329,24 @@ h3 {
 }
 
 /* Color Gasolina */
+.gasoline-colors-result {
+    border: 1px solid #f7ba4844;
+    background-color: #f7b94817;
+}
+
+.gasoline-colors-header {
+    border-bottom: 1px solid #f7ba4844;
+}
+
+.gasoline-text-colors {
+    color: #f7ba488f;
+}
+
+.gasoline-span-colors {
+    color: #f7ba488f;
+}
+
+/* Color Álcool */
 .alcohol-colors-result {
     border: 1px solid #c1fcc436;
     background-color: #c1fcc413;
@@ -346,7 +364,7 @@ h3 {
     color: #a4fca85e;
 }
 
-/* Color Álcool */
+/* Color Diesel */
 .diesel-colors-result {
     border: 1px solid #8bb9fe41;
     background-color: #8bb9fe1c;
@@ -362,24 +380,6 @@ h3 {
 
 .diesel-span-colors {
     color: #7291be;
-}
-
-/* Color Diesel */
-.gasoline-colors-result {
-    border: 1px solid #f7ba4844;
-    background-color: #f7b94817;
-}
-
-.gasoline-colors-header {
-    border-bottom: 1px solid #f7ba4844;
-}
-
-.gasoline-text-colors {
-    color: #f7ba488f;
-}
-
-.gasoline-span-colors {
-    color: #f7ba488f;
 }
 
 #footer {
@@ -458,7 +458,7 @@ h3 {
 
     h3 {
         font-size: 1rem;
-    }    
+    }
 
     .control-inputs label {
         font-size: .8rem;
