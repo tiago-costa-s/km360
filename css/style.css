@@ -436,7 +436,6 @@ h3 {
     }
 
     #control-select-fuel {}
-
 }
 
 @media (max-width: 380px) {
@@ -455,14 +454,9 @@ h3 {
         padding: 0;
     }
 
-
     h3 {
         font-size: 1rem;
-    }
-
-    .controls {
-    /* padding: 0rem 0rem; */
-    }
+    }    
 
     .control-inputs label {
         font-size: .8rem;
@@ -472,5 +466,4 @@ h3 {
         max-width: 50px;
         font-size: 1rem;
     }
-
 }
