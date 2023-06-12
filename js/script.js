@@ -1,5 +1,4 @@
 // Seletores
-// Inputs
 const litersF = document.querySelector("#liters");
 const kmTrav = document.querySelector("#km-traveled");
 const gasolineP = document.querySelector("#gasoline-price");
@@ -11,7 +10,6 @@ const btnBestPrice = document.querySelector("#btn-best-price");
 const btnResets = document.querySelectorAll(".btn-reset");
 const btnResetAverage = document.querySelector("#btn-reset-average");
 const btnResetBestPrice = document.querySelector("#btn-reset-best-price");
-
 
 const optionsSelect = document.querySelector("#control-select-fuel select");
 
