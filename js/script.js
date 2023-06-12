@@ -16,7 +16,7 @@ const selectF = document.querySelector("#select-fuel");
 const optionsSelect = document.querySelector("#control-select-fuel select");
 
 // Funções
-function insertColorSelect() {
+function insertColorSelectOpitions() {
     optionsSelect.className = "";
     if (selectF.value === "gasoline") {
         optionsSelect.classList.add("gasoline-text-colors");
@@ -241,7 +241,7 @@ function resetInputsBestPrice() {
 }
 
 // Eventos
-selectF.addEventListener("click", insertColorSelect);
+selectF.addEventListener("click", insertColorSelectOpitions);
 btnAverage.addEventListener("click", createResult);
 btnBestPrice.addEventListener("click", createResult);
 
