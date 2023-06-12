@@ -382,6 +382,11 @@ h3 {
     color: #7291be;
 }
 
+/* None */
+.noneClass {
+    color: #b1b9c0;
+}
+
 #footer {
     display: flex;
     align-items: center;

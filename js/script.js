@@ -26,6 +26,8 @@ function insertColorSelectOpitions() {
     }
     else if (selectF.value === "diesel") {
         optionsSelect.classList.add("diesel-text-colors");
+    } else {
+        optionsSelect.classList.add("noneClass");
     }
 }
 
