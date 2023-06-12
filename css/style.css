@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    /* border: 1px solid red; */
 }
 
 #nav {
@@ -23,32 +24,39 @@ header {
     background-color: #212529;
     position: sticky;
     top: 0;
-    margin: 0 auto;
     width: 100%;
-    padding: 1rem;
-    /* max-width: 1200px; */
-
-    /* border: 1px solid red; */
 }
 
-#box-logo-header {
+#nav-content {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 1rem;
+
 }
 
-#box-logo-header p {
-    font-size: 1.5rem;
+#box-logo p {
     font-family: 'Bebas Neue', sans-serif;
     font-style: italic;
-    /* text-shadow: 2px 1px rgb(172, 172, 172); */
+}
 
+#box-logo p, .fa-car-side {
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
 }
 
-.fa-solid.fa-car-side {
-    font-size: 1.5rem;
-    color: white;
+#box-repository a {
+    text-decoration: none;
+}
+
+#box-repository p, .fa-code {
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid red; */
 }
 
 
@@ -76,9 +84,7 @@ h3 {
 
     /* background-image: linear-gradient(to top, #212529, #1b2736, #182743, #1e264e, #2c2256, #36235d, #412464, #4d246a, #522e76, #573782, #5c418f, #604b9b); */
     background-image: linear-gradient(to top, #212529, #222e35, #21383f, #1f4248, #1d4c4e);
-
     /* background-image: linear-gradient(to top, #212529, #212f3f, #233856, #2c406c, #3e4682, #464486, #504188, #5a3e8a, #55347e, #502a72, #4b2066, #45165a);    background-image: linear-gradient(to top, #212529, #202c3a, #22324b, #28375b, #353b6b, #3e3f7b, #49438b, #57469a, #5c4db1, #5f55c9, #605de2, #5f66fb); */
-
     /* border: 2px solid red; */
 }
 
@@ -103,8 +109,6 @@ h1 {
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 3rem;
-    /* color: rgb(79, 161, 172); */
-
 }
 
 #description-app span {
@@ -302,14 +306,14 @@ h1 {
 
 .box-results {
     width: 100%;
-    max-width: 500px;
-    height: 79px;
 }
 
 /* Resultado */
 #result1, #result2 {
+    margin: 0 auto;
     max-width: 500px;
-    border-radius: 5px;
+    height: 79px;
+    border-radius: 7px;
 }
 
 .header-results {
@@ -394,24 +398,42 @@ h1 {
     color: #f7ba488f;
 }
 
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 400px;
+    /* border: 1px solid red; */
+    /* background-image: linear-gradient(to bottom, #212529, #222e35, #21383f, #1f4248, #1d4c4e); */
+    /* background-image: linear-gradient(to bottom, #212529, #2a2930, #362d32, #403131, #44382f); */
+    background-image: linear-gradient(to bottom, #212529, #232b35, #253241, #27384d, #2b3e5a);
+}
+
+#footer i {
+    font-size: 2rem;
+    color:#b9bbbe ;
+}
+
 
 /* Responsividade */
 @media(max-width: 480px) {
-    #description-app {
-        padding: 1rem;
+
+    .orbit {
+        padding: 0 .7rem;
     }
 
     #description-app p {
+        padding: 0 .7rem;
         text-align: justify;
     }
 
     .description-option {
-        width: calc(100% - .7rem);
         padding: 1.5rem;
     }
 
     .description-option p {
-        /* font-size: 1.2rem; */
+        font-size: 1.2rem;
     }
 
     h2 {
@@ -419,7 +441,4 @@ h1 {
         text-align: center;
     }
 
-    .calculator {
-        width: calc(100% - .7rem);
-    }
 }
